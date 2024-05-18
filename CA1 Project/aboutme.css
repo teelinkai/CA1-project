@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* Body Style */
+body {
+    box-sizing: border-box;
+    margin: auto;
+    user-select: none;
+}
+
+/* Navigation Style */
+#logo {
+    width: 200px; 
+    height: auto; 
+    padding-left: 10em;
+}
+
+.Navigation {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    letter-spacing: 0.05em;
+    padding: 15px 0;
+    background-color: white;
+    position: fixed;
+}
+
+.Navigation ul {
+    display: table-row;
+}
+
+.Navigation li {
+    display: inline-block;
+    padding-right: 120px; 
+}
+
+.Navigation a { 
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9em;
+}
+
+.Navigation a:hover {
+    transform: scale(1.2);
+    display: block;
+}
+
+/* Footer Style */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 3% 0 3% 27%;
+}
+
+.contactme > a > img {
+    filter: invert(100%);
+}
+
+.contactme > a {
+    margin: 5px;
+}
+
+.contactme {
+    display: flex;
+    margin-right: 5%;
+}
+
+.discover {
+    display: flex;
+}
+
+.discover > a{
+    text-decoration: none;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 1.15em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.discover a:hover {
+    text-decoration: underline;
+}
+
+.contactme a:hover {
+    transition: 0.5s;
+    filter: invert(50%);
+}
+
+/* Banner Style */
+article {
+    margin-bottom: 6%;
+}
+
+article header {
+    text-align: center;
+    background-image: url("banner.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 350px;
+    text-shadow: 3px 3px 5px black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article header h1::first-line {
+    font-size: 3em;
+    margin-top: 100px;
+}
+
+/* Main content Style */
+ #me {
+    float: left;
+    width: 250px;
+    height: auto;
+    padding-right: 5%;
+} 
+
+section > h1 {
+    font-style: bold;
+    font-size: 3em;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2%;
+}
+
+section {
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: -1%;
+}
+
+.paragraph {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 1.15em;
+}
+
+section > h2 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -2%;
+    text-align: center;
+}
+
+#lebron {
+    float: right;
+    width: 400px;
+    height: 500px;
+    padding-left: 5%;
+}
+

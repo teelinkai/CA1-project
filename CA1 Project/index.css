@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* Body Style */
+body {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/* Banner Style */
+article header {
+    text-align: center;
+    background-image: url("climatechange-polarbear.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 320px;
+    text-shadow: 3px 3px 5px black;
+}
+
+article > header > h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article > header > h2 {
+    margin-top: -40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navigation Style */
+#logo {
+    width: 200px; 
+    height: auto; 
+    padding-left: 10em;
+}
+
+.Navigation {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    letter-spacing: 0.05em;
+    padding: 15px 0;
+    background-color: white;
+    position: fixed;
+}
+
+.Navigation ul {
+    display: table-row;
+}
+
+.Navigation li {
+    display: inline-block;
+    padding-right: 120px; 
+}
+
+.Navigation a { 
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 0.9em;
+}
+
+.Navigation a:hover {
+    transform: scale(1.2);
+    display: block;
+}
+
+/* Main Content Style */
+.maintitle {
+    font-style: bold;
+    font-size: 3em;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+article > p {
+    font-size: 1.15em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    width: 60%;
+    margin: auto;
+}
+
+#main-part {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-gap: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#hottemp {
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+
+.title {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1.5em;
+}
+
+#main-part p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    font-size: 1.15em;
+}
+
+#ghg {
+    float: right;
+    width: 350px;
+    height: 350px;
+}
+
+#sub-part {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    width: 60%;
+    margin: auto;
+    margin-top: -5%;
+    grid-gap: 10%;
+}
+
+.paragraph {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.15em;
+    text-align: justify;
+}
+
+/* Real World Example Style */
+#last-part img {
+    display: block;
+    margin: 0 auto;
+}
+
+#last-part > p {
+    font-size: 1.15em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    width: 60%;
+    margin: 3% auto;
+}
+
+/* Footer Style */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 3% 0 3% 27%;
+}
+
+.contactme > a > img {
+    filter: invert(100%);
+}
+
+.contactme > a {
+    margin: 5px;
+}
+
+.contactme {
+    display: flex;
+    margin-right: 5%;
+}
+
+.discover {
+    display: flex;
+}
+
+.discover > a{
+    text-decoration: none;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 1.15em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-right: 1%;
+}
+
+.discover a:hover {
+    text-decoration: underline;
+}
+
+.contactme a:hover {
+    transition: 0.5s;
+    filter: invert(50%);
+}
+/* 
+Source of image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsUc-yenaUgCUagzQt7bKDKzae1AWRbroRk7wWetHkA&s 
+Source of code(#logo): ChatGPT "how to add picture to the nav ul li and position it on the left and make it small" Date: 6/5/2024
+Source of code(.Navigation): ChatGPT "how to shift the image to the left of nav and the words to the right of nav relative to the code given above" Date: 6/5/2024
+*/
